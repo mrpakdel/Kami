@@ -375,6 +375,8 @@ a:hover{
     transition: all .3s ease;
     border-radius: 5px;
     box-shadow: 0 0px 19px rgba(168, 172, 185, .3);
+    padding-right: 0px;
+    padding-left: 0px;
 }
 .videobox .course-thumbnail-holder {
     position: relative;
@@ -383,5 +385,56 @@ a:hover{
     width: 100%;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
+}
+.videobox:hover .course-item-inner {
+    box-shadow: 0 7px 25px rgba(168, 172, 185, .3);
+    transform: translateY(-4px);
+}
+.course-price ins {
+    font-weight: 600;
+    border-radius: 3px;
+    line-height: 16px;
+    background-color: transparent;
+    color: #29ca4a;
+    padding: 5px 8px;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+}
+.course-content-holder .course-content-bottom {
+    background: #f6f7fa;
+    padding: 10px 12px;
+    font-size: .9375rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+@media (min-width: 992px)
+.videobox {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.33333%;
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+}
+
+@media (min-width: 768px)
+.videobox{
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.videobox {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+}
+.videobox{
+    margin-bottom: 1.875rem;
 }
 
