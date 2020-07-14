@@ -372,7 +372,7 @@ a:hover{
 }
 .videobox{    
     background-color: #fff;
-    transition: all .3s ease;
+    transition: all .5s ease;
     border-radius: 5px;
     box-shadow: 0 0px 19px rgba(168, 172, 185, .3);
     padding-right: 0px;
@@ -385,6 +385,39 @@ a:hover{
     width: 100%;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
+}
+.course-item-inner{
+       transition: all .5s ease; 
+}
+.sale-perc-badge {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    background: #fea000;
+    z-index: 5;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 100;
+    line-height: 16px;
+    left: -10px;
+    top: -10px;
+    -webkit-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    border-radius: 20px 20px 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.sale-perc {
+    font-size: 20px;
+    font-weight: 700;
+}
+.course-item-inner:hover .sale-perc-badge {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
 }
 .videobox:hover .course-item-inner {
     box-shadow: 0 7px 25px rgba(168, 172, 185, .3);
@@ -413,6 +446,140 @@ a:hover{
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+}
+.btn-section{
+     position: absolute;
+    bottom: -45px;
+    right: 12px;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    transition: all .2s linear;
+}
+.videobox:hover .btn-section {
+    bottom: 12px !important;
+    opacity: 1;
+}
+.course-content-main {
+    padding: 12px;
+    overflow: hidden;
+}
+.course-content-main .course-rating-teacher .star-rating {
+    font-size: .8125rem;
+    float: left;
+}
+
+.average-rating-stars .star-rating {
+    display: inline-block;
+    vertical-align: top;
+    width: 90px;
+    height: 18px;
+    direction: ltr;
+    margin-top: 5px;
+    background-size: 18px;
+    background: url(../images/star-empty.svg) left top repeat-x;
+}
+.average-rating-stars .star-rating > span {
+    display: block;
+    text-indent: -9999px;
+    line-height: 1;
+    height: 18px;
+    background-size: 18px 18px;
+    background: url(../images/star-fill.svg) left top repeat-x;
+}
+.average-rating-stars .star-rating > span {
+    display: block;
+    text-indent: -9999px;
+    line-height: 1;
+    height: 18px;
+    background-size: 18px 18px;
+    background: url(../images/star-fill.svg) left top repeat-x;
+}
+.cdb-video-icon:hover {
+    background-color: #fff !important;
+    color: #495057 !important;
+}
+.add-to-cart-loop i{
+    margin-left: 0 !important;
+}
+.cdb-video-icon {
+    background-color: rgba(255, 255, 255, 0.37);
+    width: 40px;
+    height: 40px;
+    border: 0;
+    color: #fff;
+    font-size: 16px;
+    padding-left: 3px;
+}
+.add-to-cart-loop {
+    color: #fff;
+    font-size: 23px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.37) !important;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    padding: 8px 0;
+    justify-content: center;
+}
+.cdb-video-icon {
+    background-color: rgba(255, 255, 255, 0.37);
+    width: 40px;
+    height: 40px;
+    border: 0;
+    color: #fff;
+    font-size: 16px;
+    padding-left: 3px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+.cdb-video-icon i {
+    font-size: 23px;
+}
+.teacher-box {
+    font-size: 11px;
+    color: #6c757d;
+    float: right !important;
+    padding: 0 2px;
+}
+.average-rating-stars .price {
+    display: none;
+}
+.teacher-box .fal {
+    font-size: 18px;
+    color: #6c757d;
+    -webkit-transform: translateY(5px);
+    -moz-transform: translateY(5px);
+    -ms-transform: translateY(5px);
+    -o-transform: translateY(5px);
+    transform: translateY(5px);
+}
+
+.course-content-main .course-title {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -.5px;
+    line-height: 1.5;
+    height: 43px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+.course-content-main .course-rating-teacher {
+    overflow: hidden;
+    position: relative;
+    display: block;
 }
 @media (min-width: 992px)
 .videobox {
