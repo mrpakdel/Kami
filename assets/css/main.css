@@ -346,6 +346,9 @@ a:hover{
 .latest-learning .learn-box:hover{
     margin-top:25px;
 }
+.header_courses{
+    margin-bottom: 40px;
+}
 .title_section_button a.btn {
     padding: 3px 15px;
     font-size: 12px;
@@ -580,6 +583,71 @@ a:hover{
     overflow: hidden;
     position: relative;
     display: block;
+}
+.post-inner {
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    -webkit-box-shadow: 0 5px 30px rgba(70,72,77,.08);
+    box-shadow: 0 5px 30px rgba(70,72,77,.08);
+    height: 100%;
+}
+.post-content .post-entry {
+    margin: 16px 0px;
+}
+.post-inner .post-content {
+    padding: 0px 1rem;
+    overflow: hidden;
+}
+.post-inner .post-thumbnail {
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .075);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .075);
+}
+.post-thumbnail img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+}
+.post-content .post-entry .category {
+    font-size: 12px;
+    color: rgb(127, 129, 135);
+    position: relative;
+}
+.the-excerpt.gird-excerpt {
+    font-size: 12px;
+    height: 45px;
+    line-height: 18px;
+    color: rgb(137, 137, 137);
+}
+
+ .the-excerpt {
+    margin-bottom: 15px;
+}
+.entry-title {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    line-height: 26px;
+    overflow: hidden;
+}
+.more-holder {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 16px;
+}
+.more-holder a {
+    font-size: 14px;
+    color: rgb(254, 160, 0);
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(254, 160, 0);
+    border-image: initial;
+    border-radius: 4px;
+    transition: all 0.2s ease 0s;
+    padding: 0px 8px;
 }
 @media (min-width: 992px)
 .videobox {
